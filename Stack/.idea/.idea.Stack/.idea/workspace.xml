@@ -13,8 +13,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Plate/PlateMove.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Plate/SpawnPlate.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Plate/PlateMove.cs" />
       </list>
     </option>
   </component>
@@ -56,7 +56,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1736353763572</updated>
-      <workItem from="1736353779504" duration="5203000" />
+      <workItem from="1736353779504" duration="9937000" />
+      <workItem from="1736434333901" duration="3160000" />
     </task>
     <servers />
   </component>

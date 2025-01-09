@@ -14,39 +14,31 @@ public class SpawnPlate : MonoBehaviour
 
     private void Start()
     {
-        Spawn();
         _plateMove.StopPlate += Spawn;
+        Spawn();
     }
-
-    private void Update()
-    {
-        if (!_plateMove.IsMoving)
-        {
-            Spawn();
-        }
-    }
-
-
-    private void OnDestroy()
-    {
-        _plateMove.StopPlate -= Spawn;
-    }
-
-
-    private void Spawn()
+    
+    public void Spawn()
     {
         _offset.y += _offsetIncrement;
         var currentSpawn = _spawnPoints[_currentIndexPoint];
         Quaternion rotation = Quaternion.Euler(0, -135, 0);
-            
-
+        
         if (_currentIndexPoint == 1)
         { 
             rotation = Quaternion.Euler(0,135,0);
         }
             
-        var spawnPlate = Instantiate(_plate, currentSpawn.position + _offset, rotation);
-            
+        var newPlate = Instantiate(_plate, currentSpawn.position + _offset, rotation);
+        _plateMove.StopPlate -= Spawn;
+        var plateMove = newPlate.GetComponent<PlateMove>();
+
+        if (plateMove != null)
+        {
+            _plateMove = plateMove;
+            _plateMove.StopPlate += Spawn;
+        }
+
         _currentIndexPoint++;
             
         if (_currentIndexPoint >= _spawnPoints.Length)
