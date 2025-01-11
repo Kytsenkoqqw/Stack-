@@ -118,7 +118,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63fcc4e5237f88145b3e016aee04664d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _spawnPlate: {fileID: 4838764436838677798, guid: 37b522bd49a1d2445bf3881834aa1668, type: 3}
   _moveSpeed: 5
-  _waypoints:
+  _firstWaypoints:
   - {fileID: 6885885979469321388, guid: ac5c38665fb6bca49ae80be21238c815, type: 3}
   - {fileID: 3668542755319321463, guid: dc8ec96fcd068274dbad6c1442bf2302, type: 3}
+  _secondWaypoints:
+  - {fileID: 5120509990276676126, guid: 0d0237148b1a61e47a576dda64c75fd1, type: 3}
+  - {fileID: 4067956731368835102, guid: 907a5278e2104bf4788bdb03105d670d, type: 3}

@@ -8,7 +8,7 @@ public class SpawnPlate : MonoBehaviour
     [SerializeField] private GameObject _plate;
     [SerializeField] private Transform[] _spawnPoints;
     [SerializeField] private PlateMove _plateMove;
-    private int _currentIndexPoint = 0;
+    public int _currentIndexPoint = 0;
     private Vector3 _offset = new Vector3(0, 0,0);
     private float _offsetIncrement = 0.5f;
 
@@ -17,7 +17,19 @@ public class SpawnPlate : MonoBehaviour
         _plateMove.StopPlate += Spawn;
         Spawn();
     }
-    
+
+    private void Update()
+    {
+        if (_currentIndexPoint == 1)
+        {
+            _plateMove.MovePlate(_plateMove._firstWaypoints);
+        }
+        else if (_currentIndexPoint == 0)
+        {
+            _plateMove.MovePlate(_plateMove._secondWaypoints);
+        }
+    }
+
     public void Spawn()
     {
         _offset.y += _offsetIncrement;
@@ -45,6 +57,7 @@ public class SpawnPlate : MonoBehaviour
         { 
             _currentIndexPoint = 0;
         }
+        Debug.Log(_currentIndexPoint);
     }
 
 }
