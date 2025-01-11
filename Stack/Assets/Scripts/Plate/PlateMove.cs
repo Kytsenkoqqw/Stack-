@@ -10,15 +10,12 @@ public class PlateMove : MonoBehaviour
    [SerializeField] private float _moveSpeed = 3f;
    [SerializeField] public Transform[] _firstWaypoints;
    [SerializeField] public Transform[] _secondWaypoints;
-   private Vector3 _offset = new Vector3(0,0,0);
-   private float _offsetIncrement = 0.5f;
-
+  // [SerializeField] private Transform _parent;
+   
+   private float _moveAmount = 0.5f;
    private int _currentWaypointIndex = 0;
    
-   
    private bool _isMovingForward = true;
-
-
    private bool IsMoving;
 
    private void Start()
@@ -48,30 +45,8 @@ public class PlateMove : MonoBehaviour
       {
          _moveSpeed = 0f;
          IsMoving = false;
-         RaiseWaypoints();
          StopPlate?.Invoke();
       } 
       
-   }
-   
-   public void RaiseWaypoints()
-   {
-      _offset.y += _offsetIncrement;
-      foreach (var waypoint in _firstWaypoints)
-      {
-         if (waypoint != null)
-         {
-            waypoint.position += new Vector3(0, _offset.y, 0);
-         }
-      }
-
-      // Поднять точки из второго массива
-      foreach (var waypoint in _secondWaypoints)
-      {
-         if (waypoint != null)
-         {
-            waypoint.position += new Vector3(0, _offset.y, 0);
-         }
-      }
    }
 }

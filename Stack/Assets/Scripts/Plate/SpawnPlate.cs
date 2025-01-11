@@ -8,10 +8,10 @@ public class SpawnPlate : MonoBehaviour
     [SerializeField] private GameObject _plate;
     [SerializeField] private Transform[] _spawnPoints;
     [SerializeField] private PlateMove _plateMove;
+    [SerializeField] private Transform _parent;
+    
     public int _currentIndexPoint = 0;
-    private Vector3 _offset = new Vector3(0, 0,0);
-    private float _offsetIncrement = 0.5f;
-
+    
     private void Start()
     {
         _plateMove.StopPlate += Spawn;
@@ -32,7 +32,6 @@ public class SpawnPlate : MonoBehaviour
 
     public void Spawn()
     {
-        _offset.y += _offsetIncrement;
         var currentSpawn = _spawnPoints[_currentIndexPoint];
         Quaternion rotation = Quaternion.Euler(0, -135, 0);
         
@@ -41,7 +40,9 @@ public class SpawnPlate : MonoBehaviour
             rotation = Quaternion.Euler(0,135,0);
         }
             
-        var newPlate = Instantiate(_plate, currentSpawn.position + _offset, rotation);
+        var newPlate = Instantiate(_plate, currentSpawn.position, rotation);
+        newPlate.transform.SetParent(_parent);
+        ShiftParent();
         _plateMove.StopPlate -= Spawn;
         var plateMove = newPlate.GetComponent<PlateMove>();
 
@@ -58,6 +59,11 @@ public class SpawnPlate : MonoBehaviour
             _currentIndexPoint = 0;
         }
         Debug.Log(_currentIndexPoint);
+    }
+
+    private void ShiftParent()
+    {
+        _parent.position += new Vector3(0, -0.5f, 0);
     }
 
 }

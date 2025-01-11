@@ -49,4 +49,5 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   _plateMove: {fileID: 3011362699710088988, guid: a942d78203a37d34c9ae312e64f02b97, type: 3}
+  _parent: {fileID: 1744655708191974401, guid: 7de4f25c7a9ade54db51eb69385471a2, type: 3}
   _currentIndexPoint: 0
