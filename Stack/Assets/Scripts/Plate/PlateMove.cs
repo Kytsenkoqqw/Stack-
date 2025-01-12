@@ -6,12 +6,10 @@ using UnityEngine;
 public class PlateMove : MonoBehaviour
 {
    public event Action StopPlate;
-   [SerializeField] private SpawnPlate _spawnPlate;
    [SerializeField] private float _moveSpeed = 3f;
    [SerializeField] public Transform[] _firstWaypoints;
    [SerializeField] public Transform[] _secondWaypoints;
-  // [SerializeField] private Transform _parent;
-   
+
    private float _moveAmount = 0.5f;
    private int _currentWaypointIndex = 0;
    
