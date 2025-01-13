@@ -11,6 +11,9 @@
             <e p="PlateMove.cs" t="Include" />
             <e p="SpawnPlate.cs" t="Include" />
           </e>
+          <e p="Raycast" t="Include">
+            <e p="TestRaycast.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

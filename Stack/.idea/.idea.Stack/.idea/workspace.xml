@@ -15,6 +15,7 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Plate/PlateMove.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Plate/SpawnPlate.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Raycast/TestRaycast.cs" />
       </list>
     </option>
   </component>
@@ -62,6 +63,7 @@
       <workItem from="1736596791676" duration="1024000" />
       <workItem from="1736606872907" duration="3621000" />
       <workItem from="1736701699922" duration="954000" />
+      <workItem from="1736800896803" duration="967000" />
     </task>
     <servers />
   </component>
