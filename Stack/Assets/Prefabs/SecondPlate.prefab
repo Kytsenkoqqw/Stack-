@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.92387956, z: 0, w: 0.38268343}
   m_LocalPosition: {x: 0.034392357, y: 0.5, z: 18.065617}
-  m_LocalScale: {x: 4, y: 0.5, z: 4}
+  m_LocalScale: {x: 3.9656076, y: 0.5, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -118,7 +118,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63fcc4e5237f88145b3e016aee04664d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawnPlate: {fileID: 4838764436838677798, guid: 37b522bd49a1d2445bf3881834aa1668, type: 3}
   _moveSpeed: 5
   _firstWaypoints:
   - {fileID: 6885885979469321388, guid: ac5c38665fb6bca49ae80be21238c815, type: 3}
@@ -126,4 +125,5 @@ MonoBehaviour:
   _secondWaypoints:
   - {fileID: 5120509990276676126, guid: 0d0237148b1a61e47a576dda64c75fd1, type: 3}
   - {fileID: 4067956731368835102, guid: 907a5278e2104bf4788bdb03105d670d, type: 3}
-  _parent: {fileID: 7985265268454965752, guid: 7de4f25c7a9ade54db51eb69385471a2, type: 3}
+  _cuttingTile: {fileID: 5442642525668424278, guid: 3ef968ab566f68844b122e5cd48c315f, type: 3}
+  _lastPlate: {fileID: 2445690192664152450, guid: 08aedf950b805c74f8a689d09350fb72, type: 3}

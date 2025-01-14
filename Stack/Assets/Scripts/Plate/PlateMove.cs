@@ -11,7 +11,7 @@ public class PlateMove : MonoBehaviour
    [SerializeField] public Transform[] _secondWaypoints;
 
    private float _moveAmount = 0.5f;
-   private int _currentWaypointIndex = 0;
+   private int _currentWaypointIndex = 0; 
    
    private bool _isMovingForward = true;
    private bool IsMoving;
@@ -44,7 +44,6 @@ public class PlateMove : MonoBehaviour
          _moveSpeed = 0f;
          IsMoving = false;
          StopPlate?.Invoke();
-      } 
-      
+      }
    }
 }

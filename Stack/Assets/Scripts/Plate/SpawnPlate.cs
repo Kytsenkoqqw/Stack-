@@ -11,7 +11,8 @@ public class SpawnPlate : MonoBehaviour
     [SerializeField] private Transform _parent;
     
     public int _currentIndexPoint = 0;
-    
+
+    private bool _isFirstSpawn = true;
     private void Start()
     {
         _plateMove.StopPlate += Spawn;
@@ -42,7 +43,15 @@ public class SpawnPlate : MonoBehaviour
             
         var newPlate = Instantiate(_plate, currentSpawn.position, rotation);
         newPlate.transform.SetParent(_parent);
-        ShiftParent();
+
+        if (!_isFirstSpawn)
+        {
+            ShiftParent();
+        }
+        else
+        {
+            _isFirstSpawn = false;
+        }
         _plateMove.StopPlate -= Spawn;
         var plateMove = newPlate.GetComponent<PlateMove>();
 

@@ -9,13 +9,15 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Plate/SpawnPlate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Plate/CuttingTile.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Plate/PlateMove.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Plate/SpawnPlate.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Raycast/TestRaycast.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Plate/SpawnPlate.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Plate/CuttingTile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Plate/PlateMove.cs" />
       </list>
     </option>
   </component>
@@ -63,7 +65,8 @@
       <workItem from="1736596791676" duration="1024000" />
       <workItem from="1736606872907" duration="3621000" />
       <workItem from="1736701699922" duration="954000" />
-      <workItem from="1736800896803" duration="967000" />
+      <workItem from="1736800896803" duration="1365000" />
+      <workItem from="1736858921607" duration="3304000" />
     </task>
     <servers />
   </component>
@@ -71,5 +74,11 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1736859770096">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1736859770096" />
   </component>
 </project>
